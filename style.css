@@ -1,0 +1,238 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    /* background-color:black; */
+    width:100%;
+    background: linear-gradient(rgba(12, 12, 27, 0.7),rgba(0,0,0,0.2)) ,url('./images/home.jpg');
+    background-size: cover;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    font-family:sans-serif;
+    color:white;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+
+nav {
+    /* background-color: #000; */
+    /* display: flex;
+    justify-content:center; */
+    /* align-items: center; */
+    background: rgba(243, 240, 240, 0.196);
+    color:black;
+   
+   height: 8%;
+   
+    /* color:black; */
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+nav ul li a {
+  /* color:white; */
+  color:black;
+   font-size: xx-large;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease; /* Smooth transition for the hover effect */
+}
+
+nav ul li a:hover {
+   color:white;/* Light white color for hover effect */
+}
+
+
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content:space-evenly;
+    /* align-items: center; */
+}
+
+nav ul li {
+    margin: 5px;
+}
+
+/* nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+} */
+
+.content {
+    margin-top: 60px; /* To avoid content hiding behind the fixed nav */
+    padding: 20px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    /* text-align: center; Center text content */
+}
+
+footer {
+    /* background-color: #000; */
+    /* border-top:1px solid rgba(181, 176, 176, 0.637); */
+    /* color:black; */
+    height:5vh;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    background: rgba(243, 240, 240, 0.196);
+    color:black;
+    font-size:large;
+
+}
+
+/* h1 {
+    margin-bottom: 20px;
+} */
+/* 
+p {
+    margin-bottom: 15px;
+} */
+.text{
+    width:70%;
+    max-width:650px;
+    background: rgba(243, 240, 240, 0.196);
+    padding: 20px;
+    margin:0px 28px;
+    border-radius: 10px;
+    /* max-height: max-content; */
+    height:60vh;
+    /* width:60vw; */
+   color:white;
+    /* background-color: aliceblue; */
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* flex-wrap: wrap; */
+    align-items: center;
+    padding:10px;
+    gap:1rem;
+}
+/* .profile{
+
+} */
+.profile img{
+    width:200px;
+    height:200px;
+    border-radius: 50%;
+   
+}
+.aboutMyself{
+    width:70%;
+    height:50%;
+   /* border:2px solid black; */
+   text-align: justify;
+   padding:20px;
+   color:white;
+   border-left:3px solid white;
+   border-right:3px solid white;
+   font-size:20px;
+   font-style:oblique;
+   font-weight:300;
+}
+#mainhead{
+    font-size:70px;
+    margin-bottom: 10px;
+    /* color:black; */
+}
+.create_blog{
+   padding-top:8px;
+    width:20%;
+    height:10%;
+    background-color: black;
+    color:white;
+    border-radius: 10px;
+    text-align: center;
+}
+.create_blog:hover{
+    background-color:red;
+    /* transition: red 0.3s ease; */
+  
+}
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    height:70vh;
+    width:80vw;
+ 
+}
+
+.gallery-item {
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.273);
+    background: rgba(243, 240, 240, 0.196);
+    padding:10px;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    color:white;
+    text-align: justify;
+}
+.gal{
+    background: none;
+}
+
+.gallery-item img {
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+.gallery-item p{
+    font-size: larger;
+    font-style: oblique;
+    font-weight: 200;
+  
+}
+
+.gallery-item img:hover {
+    transform: scale(1.1);
+}
+form{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    /* align-items: center; */
+    height:100%;
+    width:60%;
+
+    
+}
+
+.submit{
+    padding:8px;
+    width:20%;
+    height:8%;
+    background-color: black;
+    color:white;
+    border-radius: 10px;
+    text-align: center;
+    border:none;
+}
+.submit:hover{
+    background-color:red;
+}
+form input, form textarea {
+    /* width: 300px; */
+    padding: 10px;
+    margin-top: 5px;
+    }
